@@ -1,0 +1,125 @@
+programa
+{
+	inclua biblioteca Matematica
+ --> m
+	
+	funcao inicio()
+	{
+		real Terra   = 365.35 
+		real Venus   = 0.61519726
+		real Marte   = 1.8808158
+		real Jupiter = 11.862615
+		real Urano   = 84.016846
+		real Netuno  = 164.79132
+		real Sol1
+		real Sol2 
+		real Sol3
+		real Sol4
+		real Sol5
+
+          Sol1 = Terra * Venus
+		Sol2 = Terra * Marte
+		Sol3 = Terra * Jupiter
+		Sol4 = Terra * Urano 
+		Sol5 = Terra * Netuno
+
+	     escreva("Vênus demora cerca de " , m.arredondar(Sol1, 2)," dias terrestre para dar uma volta ao redor do sol!\n")
+          escreva("Marte demora cerca de " , m.arredondar(Sol2, 2)," dias terrestre para dar uma volta ao redor do sol!\n")
+          escreva("Júpiter demora cerca de " , m.arredondar(Sol3, 2)," dias terrestre para dar uma volta ao redor do sol!\n")
+          escreva("Urano demora cerca de " , m.arredondar(Sol4, 2)," dias terrestre para dar uma volta ao redor do sol!\n")
+          escreva("Netuno demora cerca de " , m.arredondar(Sol5, 2)," dias terrestre para dar uma volta ao redor do sol!\n")
+        //A 
+        //2
+	}
+ 
+}
+
+
+
+programa
+{
+	
+	funcao inicio()
+	{
+		real   Mercrio
+   = 0.2408467
+		inteiro idade    = 977000000
+          inteiro idade_m
+
+          idade_m = ((((idade / 60) /60)/24)/365) / Mercrio
+
+		escreva("Sua idade em segundos e ", idade, ", em Mercurio sua idade em anos dicaria : ", idade_m)
+		//B
+		//2
+	}
+}
+
+
+
+
+
+
+programa
+{
+	inclua biblioteca Matematica
+--> m
+	
+	funcao inicio()
+	{
+          real Terra   = 365.25 
+		real Venus   = 0.61519726
+		real Marte   = 1.8808158
+		real Jupiter = 11.862615
+		real Urano   = 84.016846
+		real Netuno  = 164.79132
+		real Sol1
+		real Sol2 
+		real Sol3
+		real Sol4
+		real Sol5
+          real idade
+          real planeta
+          
+          Sol1 = (Terra * Venus)
+		Sol2 = (Terra * Marte)
+		Sol3 = (Terra * Jupiter)
+		Sol4 = (Terra * Urano) 
+		Sol5 = (Terra * Netuno)
+
+		escreva("Qual é a sua idade")
+		leia(idade)
+
+		escreva("Escolha um planeta: 1 - Vênus , 2 - Marte , 3 - Júpiter , 4 - Urano , 5 - Netuno:")
+          leia(planeta)
+
+          se(planeta == 1 ){
+          	escreva("sua idade venus e", Sol1 / idade)
+          }senao{
+              se(planeta == 2 ){
+          	   escreva("sua idade Marte e", Sol2 / idade)
+          	}senao{
+          	    se(planeta == 3 ){
+          	        escreva("sua idade Júpiter e", Sol3 / idade)
+          	     }senao{
+          	         se(planeta == 4 ){
+          	             escreva("sua idade Urano e", Sol4 / idade)
+          	          }senao{
+          	              se(planeta == 5 ){
+          	                escreva("sua idade Netuno e", Sol5 / idade) //C
+          	      
+              }
+             }
+            }
+	      }
+          }
+         se(planeta >=1 e idade <= 5 ){
+            escreva("\nVocê uma uma pessoa mais velha nesse planeta")
+        }senao
+        {
+            escreva("\nVocê é uma pessoa mais jovem nesse planeta") //D
+        } 
+        }
+}
+
+
+
