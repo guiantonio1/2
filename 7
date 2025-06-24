@@ -1,24 +1,18 @@
 programa
 {
 	inclua biblioteca Matematica
---> m
 	
 	funcao inicio()
 	{
-        real tamanho
-        inteiro velocidade
-        real temp
+	   inteiro n
+        inteiro calculo
 
-        escreva("Qual o tamanho do arquivo que deseja baixar(MB)?")
-        leia(tamanho)
+        escreva("Digite sua idade:")
+        leia(n)
 
-        escreva("Qual a velocidade da sua internet(Mbps)?")
-        leia(velocidade)
+        calculo = n * (n + 1) / 2
 
-        temp = tamanho / velocidade
-
-          escreva("O seu arquivo demoraria ", temp ," minutos para baixar" )
-        
+        escreva("A soma de suas outras idades foram ", calculo )
      
 	}
 }
